@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>42-ps23106-Nguyễn Huỳnh Thành Vọng</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="trangchu.css">
+    <link rel="stylesheet" href="tintuc.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/angular-ui-router.min.js"></script>
+    <script src="app.js">
+    </script>
+
+</head>
+
+
+<body id="abc">
+    <div class="body">
+        <div id="banner">
+            <img src="hoang-hoa-tham.jpg" alt="">
+        </div>
+        <div id="menu">
+            <div id="menu1">
+                <ul>
+                    <li><a ui-sref="state1">TRANG CHỦ</a>
+                    </li>
+                    <li><a ui-sref="state2">GIỚI THIỆU</a></li>
+                    <li>
+                        <a href="#">TIN TỨC</a>
+                        <ul id="menu-news">
+                            <li><a ui-sref="state3">BẢN TIN HỌC SINH</a></li>
+                        </ul>
+                    </li>
+                    <li><a ui-sref="state5">TÀI NGUYÊN</a></li>
+                    <li><a ui-sref="state6">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+            <div id="seach">
+                <form action="">
+                    <input type="text" placeholder="Saerch" required="">
+                    <button type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="content-left">
+                <div ui-view></div>
+            </div>
+            <div id="content-right">
+                <div class="dflexs">
+                   <div class="col-md-6">
+                    <div class="sk"><strong>SỰ KIỆN TIÊU BIỂU</strong>
+                        </div>
+                        <ul>
+                            <li><a href="#">DANH SÁCH HS CÁC LỚP NĂM HỌC 2021-2022</a></li>
+                            <li><a href="#">LỊCH KIỂM TRA HỌC KỲ 2 NĂM HỌC 2021-2022</a></li>
+                            <li><a href="#">Hướng dẫn tổ chức đăng ký dự thi THPT quốc gia năm 2022 tại Gia Lai </a></li>
+                            <li><a href="#">KẾ HOẠCH Phát động Phong trào Thi đua bảo đảm trật tự, an toàn giao thông trong nhà trường năm 2021-2022</a></li>
+                            <li><a href="#">DANH SÁCH TRÚNG TUYỂN VÀO LỚP 10 - NĂM HỌC 2021-2022 </a></li>
+                        </ul>
+                   </div>
+                    <div class="col-md-6">
+                        <div class="sk"><strong>THÔNG BÁO</strong></div>
+                    <ul>
+                        <li><a href="#">Thông báo Tuyển sinh lớp 10, năm học 2020-2021</a></li>
+                        <li><a href="#">Thông báo lịch duyệt quyết toán ngân sách, học phí quý I,II...</a></li>
+                        <li><a href="#">Hướng dẫn khảo sát học kì 1 năm học 2021</a></li>
+                        <li><a href="#">Lịch dạy học trên mạng Internet trong thời gian HS nghỉ học để phòng, chống dịch bệnh Covid-19 (từ ngày 13/09/2021)</a></li>
+                        <li><a href="#">THỜI KHÓA BIỂU ÁP DỤNG TỪ NGÀY 13/9/2021</a></li>
+                        <li><a href="#">ĐĂNG KÝ LỚP HỌC THEO KHỐI THI DÀNH CHO HỌC SINH LỚP 11, 12 NĂM HỌC 2019-2020 </a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="sk">
+                    <strong>TRA CỨU KẾT QUẢ</strong>
+                </div>
+                <form>
+                    <table>
+                        <tr style="height:40px;">
+                            <td>Tài khoản: </td>
+                            <td><input type="text" placeholder="Tài khoản"></td>
+                        </tr>
+                        <tr style="height:50px;">
+                            <td>Tài khoản: </td>
+                            <td><input type="password" placeholder="Mật khẩu"></td>
+                        </tr>
+                        <tr style="height:40px;">
+                            <td></td>
+                            <td><Button type="submit">Đăng nhập</Button>
+                                <a href="#">Quên mật khẩu?</a></td>
+                        </tr>
+                    </table>
+                </form>
+            <div class="footer">
+                <div class="box-footer">
+                    <strong>Trường THPT Hoàng Hoa Thám</strong>
+                    <p>Địa chỉ: Phường Yên Thế, TP Pleiku,Tỉnh Gia Lai </p>
+                    <p>SDT:02693865434 | Email: thpthoanghoatham@gialai.gov.vn </p>
+                </div>
+                <div class="box-footer">
+                    <p><strong>Thống kê truy cập</strong></p>
+                    <p>Truy cập hôm nay: 50</p>
+                    <p>Truy cập trong tháng: 1000</p>
+                </div>
+                <div class="box-footer">
+                    <p><strong>Bản đồ chỉ dẫn</strong></p>
+                    <img src="img/map.PNG" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="arrow-up"><a href="#abc" id="btn-back-to-top"><br>Lên đầu trang</a></div>  
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+        <script>
+
+            //Get the button
+        
+        var btn = $('#btn-back-to-top');
+        
+        
+        
+        $(window).scroll(function() {
+        
+          if ($(window).scrollTop() > 300) {
+        
+            btn.addClass('show');
+        
+          } else {
+        
+            btn.removeClass('show');
+        
+          }
+        
+        });
+        
+        
+        
+        btn.on('click', function(e) {
+        
+          e.preventDefault();
+        
+          $('html, body').animate({scrollTop:0}, '300');
+        
+        });
+        
+        
+        
+        
+        
+        </script> 
+</body>
+</html>
